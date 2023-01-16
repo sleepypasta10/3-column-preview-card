@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  max-width: 900px;
+  min-height: 100vh;
+}
+.main-card {
+  height: 100%;
+  width: 75%;
+}
+.sedans-card {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  padding: 2rem 2.3rem;
+  background-color: hsl(31, 77%, 52%);
+}
+.suv-card {
+  padding: 2rem 2.3rem;
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury-card {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 2rem 2.3rem;
+  background-color: hsl(179, 100%, 13%);
+}
+.text-title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 1.5rem 0 1rem 0;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding: 0 0 1rem 0 ;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-1:active{
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.btn-2{
+    color:hsl(184, 100%, 22%) ;
+}
+.btn-2:active{
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%) ;
+    color:hsl(0, 0%, 95%) ;
+}
+.btn-3{
+    color:hsl(179, 100%, 13%) ;
+}
+.btn-3:active{
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+/* Desktop version */
+
+@media only screen and (min-width: 650px)  {
+    .main-card{
+       display: flex;
+       margin: auto;
+    }
+    .sedans-card{
+        border-top-left-radius: 6px;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 6px;
+    }
+    .luxury-card {
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0%;
+    }
+    button{
+        margin-top: 2rem;
+    }
+}
